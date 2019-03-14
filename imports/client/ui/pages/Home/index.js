@@ -13,7 +13,7 @@ class Home extends Component {
     let url
     let opacity
     if (window.__mapType === 'gatherings') {
-      url = '/images/focallocal-bg.jpg'
+      url = '/images/focallocal-proposed-bg.jpg'
       opacity = 0.5
     } else {
       url = '/images/btm-bg.jpeg'
@@ -23,8 +23,8 @@ class Home extends Component {
       <main className='home'>
         <div id='hero-bg' style={backgroundImage} />
         <FirstSection />
-        <HowToHelpSection />
         <SecondSection button/>
+        <HowToHelpSection />
       </main>
     )
   }

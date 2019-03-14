@@ -7,9 +7,9 @@ const Item = ({ item, loginButton }) =>
     {item.link !== undefined ? loginButton : null}
     <br/>
     <span className='item-subText'>{item.subText}</span>
-    {item.link !== undefined &&
-      <a className="join btn btn-primary" href={item.link}>{item.linktext}</a>
-    }
+    {/* {item.link !== undefined && */ }
+    {/*   <a className="join btn btn-primary" href={item.link}>{item.linktext}</a> */ }
+    {/* } */ }
   </div>
 
 export default Item

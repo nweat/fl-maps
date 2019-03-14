@@ -24,7 +24,7 @@ const ContributorsSection = () => (
           <Item item={item} />
         </Col>
       ))}
-      <a className="allContButton" href='https://github.com/focallocal/fl-maps/graphs/contributors'>All Contributors</a>
+      <a className="allContButton btn btn-info" href='https://github.com/focallocal/fl-maps/graphs/contributors'>All Contributors</a>
     </Row>
   </div>
 )

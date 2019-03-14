@@ -5,6 +5,10 @@ import { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 import getUserPosition, {getCurrentLocation, storeUserLocation} from '/imports/client/utils/location/getUserPosition'
 import i18n from '/imports/both/i18n/en'
 
+const { Home } = i18n
+let color
+let titleColor = {color: color}
+
 class Find extends Component {
  state = {
    error: null,
@@ -36,6 +40,10 @@ class Find extends Component {
 
    return (
      <FormGroup className='find-wrapper'>
+       <h1 className="display-5 text-center" style={
+         (window.__mapType === 'gatherings') ? titleColor = {color: 'rgba(0,0,0,.75)'} : titleColor = {color: '#ffffff'}}
+       >{Home.first_title}</h1>
+       <hr class="featurette-divider"/>
        <Label for='find'>{i18n.Home.find_events}</Label>
        <InputGroup>
          <Input
@@ -54,7 +62,7 @@ class Find extends Component {
          </InputGroupAddon>
        </InputGroup>
        {error && <div className='error-msg'>Couldn't find anything..</div>}
-       <div className='divider'>Or</div>
+       <div className='divider'></div>
        <div className='center'>
          <Button onClick={this.findByCurrentLocation}>
            Use Current Location

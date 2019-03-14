@@ -7,7 +7,7 @@
     "button_loggedIn": "Post onto the Map"
   },
   "how_to_help_section":{
-    "title": "How can I take action to make where i live a friendlier, safer and happier place?",
+    "title": "How can I take action to make where I live a friendlier, safer and happier place?",
     "content":{
       "items":[
         {
@@ -16,9 +16,7 @@
         },
         {
           "text": "Create your Public Happiness Gathering now.",
-          "link": "https://activities.focallocal.org/",
-          "linktext": "Suggestions here!",
-          "subText": "Browse, suggest and discuss positive tools and activities to create a small positive change in our world in the Action Center."
+          "link": "https://activities.focallocal.org/"
         }
       ]
     }

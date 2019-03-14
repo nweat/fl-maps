@@ -21,7 +21,7 @@ class SecondSection extends React.Component {
     return (
       <section id='second-section'>
         <Container>
-          <div className='title'>{title}</div>
+          {/* <div className='title'>{title}</div> */} 
           <Row className="items">
             {items.map((item, i) => (
               <Col key={i}>
