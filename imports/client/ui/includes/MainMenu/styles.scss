@@ -15,12 +15,12 @@ $nav-item-hover-transition: color .15s ease;
   z-index: 999;
 
   .nav {
-    height: 100%; // get main-menu height
+    --height: 100%; // get main-menu height
 
     .nav-link {
       position: relative;
       display: flex;
-      flex-flow: column;
+      flex-flow: row;
       height: 100%;
       color: #fff !important;
       transition: $nav-item-hover-transition;
@@ -44,7 +44,7 @@ $nav-item-hover-transition: color .15s ease;
         }
 
         &.active {
-          font-weight: bold;
+          font-weight: none;
         }
       }
 

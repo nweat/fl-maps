@@ -3,26 +3,27 @@
 #first-section {
   position: relative;
   display: flex;
-  margin-top: -300px;
-  margin-bottom: -110px;
+  margin-top: -280px;
+  margin-bottom: -130px;
 
 
   .first-title {
     margin-top: -130px;
     bottom: 16px;
-    font-size: 2.6em;
-    font-weight: bold;
+    font-size: 16px;
     text-align: center;
+  }
+
+  .welcome-text {
+    font-weight: bold;
+    font-size: 37px;
   }
 }
 
 .find-wrapper {
   width: 100%;
   max-width: 720px;
-  padding: 32px 24px;
-  background: rgba(255, 255, 255,.7);
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
-  border-radius: 15px;
+  padding: 50px 24px;
 
   .btn {
     width: 240px;
@@ -34,7 +35,7 @@
   }
 
   input {
-    border-radius: .25rem;
+    border-radius: 25px;
   }
 
   .input-group {
@@ -42,7 +43,30 @@
     .btn {
       position: relative;
       width: 100px;
+
+      &.search-button {
+        background-color: #f2f2f2;
+        border-radius: 0px 25px 25px 0px;
+        height: 47px;
+
+        &:active, &:hover, &.active {
+          background-color: #d9d9d9 !important;
+        }
+      }
     }
+
+    .fas.fa-location-arrow {
+      background-color: #ffffff;
+      border-radius: 25px 0px 0px 25px;
+      padding: 15px;
+      cursor: pointer;
+      color: #666666;
+
+      &:active, &:hover, &.active {
+        color: #f57c00;
+      }
+    }
+
   }
 
   .divider {
@@ -54,8 +78,9 @@
   .error-msg {
     position: relative;
     top: 3px;
-    color: #dc3545;
-    font-size: .9em;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
   }
 
   .center {
@@ -67,7 +92,7 @@
 @media screen and (max-width: 900px) {
 
   #first-section {
-    margin-top: -160px;
+  --margin-top: -160px;
 
     .first-title {
       font-size: 2.2em;
@@ -76,7 +101,8 @@
 
 
   .find-wrapper {
-    width: 98%;
+    --width: 98%;
+    padding: 50px 24px;
 
     .header {
       font-size: 2em;
@@ -98,11 +124,11 @@
 @media screen and (max-width: 520px) {
 
   #hero-bg {
-    display: none;
+    --display: none;
   }
 
   #first-section {
-    margin-top: 0;
+    --margin-top: 0;
     margin-bottom: 40px;
     padding: 0;
 

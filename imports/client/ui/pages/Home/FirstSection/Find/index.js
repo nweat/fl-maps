@@ -40,33 +40,35 @@ class Find extends Component {
 
    return (
      <FormGroup className='find-wrapper'>
-       <h1 className="display-5 text-center" style={
-         (window.__mapType === 'gatherings') ? titleColor = {color: 'rgba(0,0,0,.75)'} : titleColor = {color: '#ffffff'}}
+       <h1 className="display-5 text-center welcome-text" style={
+         (window.__mapType === 'gatherings') ? titleColor = {color: 'rgba(255,255,255,1)'} : titleColor = {color: '#ffffff'}}
        >{Home.first_title}</h1>
-       <hr class="featurette-divider"/>
-       <Label for='find'>{i18n.Home.find_events}</Label>
+
        <InputGroup>
-         <Input
+        <InputGroupAddon addonType="prepend">
+          <i class="fas fa-location-arrow" title="Use current location" onClick={this.findByCurrentLocation}></i>
+        </InputGroupAddon>
+        <Input
            id='find'
            type='text'
            value={search}
            invalid={error}
-           placeholder='Enter city, state or zipcode'
+           placeholder='Find the #PublicHappinessMovement near me'
            onChange={this.handleSearch}
            onFocus={this.removeError}
          />
          <InputGroupAddon addonType='append'>
-           <Button onClick={this.findBySearch} disabled={isGettingLocation}>
-             Find
+           <Button onClick={this.findBySearch} disabled={isGettingLocation} className="search-button">
+             <i class="fas fa-search" style={{color: '#666666'}}></i>
            </Button>
          </InputGroupAddon>
        </InputGroup>
-       {error && <div className='error-msg'>Couldn't find anything..</div>}
+       {error && <div className='error-msg'>Couldn't find anything..</div> }
        <div className='divider'></div>
        <div className='center'>
-         <Button onClick={this.findByCurrentLocation}>
-           Use Current Location
-         </Button>
+         {/*<Button onClick={this.findByCurrentLocation}>*/}
+           {/*Use Current Location*/}
+         {/*</Button>*/}
        </div>
      </FormGroup>
    )

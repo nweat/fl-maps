@@ -11,14 +11,14 @@ const LinkItem = ({ item, onClick }) => {
     <NavItem onClick={onClick}>
       <RouterNavLink to={item.route} exact className='nav-link'>
         <i className={item.icon}></i>
-        <div>{item.title}</div>
+        <div>&nbsp;{item.title}</div>
       </RouterNavLink>
     </NavItem>
   )
     : <NavItem>
       <NavLink href={item.link} target='__blank'>
         <i className={item.icon}></i>
-        <div>{item.title}</div>
+        <div>&nbsp;{item.title}</div>
       </NavLink>
     </NavItem>
 }

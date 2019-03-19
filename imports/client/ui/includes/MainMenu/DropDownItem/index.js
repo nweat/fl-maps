@@ -26,7 +26,7 @@ class DropDownItem extends Component {
           <DropdownToggle nav>
             <i className={item.icon}></i>
             <div>
-              {item.title}
+              &nbsp;{item.title}
               <i className='fas fa-caret-down inline' />
             </div>
           </DropdownToggle>

@@ -21,7 +21,7 @@ class SecondSection extends React.Component {
     return (
       <section id='second-section'>
         <Container>
-          {/* <div className='title'>{title}</div> */} 
+          {/* <div className='title'>{title}</div> */}
           <Row className="items">
             {items.map((item, i) => (
               <Col key={i}>
@@ -30,7 +30,7 @@ class SecondSection extends React.Component {
             ))}
           </Row>
         </Container>
-        {this.props.button === true ? <Button className='read-more' tag={Link} to='/about'>Read More</Button> : null}
+        {this.props.button === true ? <Button className='read-more btn btn-info' tag={Link} to='/about'>Read More</Button> : null}
       </section>
     )
   }

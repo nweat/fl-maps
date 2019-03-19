@@ -13,8 +13,8 @@ class Home extends Component {
     let url
     let opacity
     if (window.__mapType === 'gatherings') {
-      url = '/images/focallocal-proposed-bg.jpg'
-      opacity = 0.5
+      url = '/images/btm-bg.jpeg' //use a brighter picture for focallocal like this one
+      opacity = 1
     } else {
       url = '/images/btm-bg.jpeg'
     }
